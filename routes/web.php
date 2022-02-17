@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get("/murugo-login", '\App\Http\Controllers\MurugoLoginController@redirectToMurugo')->name('murugo.login');
+Route::get("/murugo-callback", '\App\Http\Controllers\MurugoLoginController@murugoCallback')->name('murugo.Callback');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

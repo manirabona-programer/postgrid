@@ -4,15 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMurugoUsersTable extends Migration
-{
+class CreateMurugoUsersTable extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up(){
         Schema::create('murugo_users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
@@ -30,8 +28,7 @@ class CreateMurugoUsersTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('murugo_users');
     }
 }

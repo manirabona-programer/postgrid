@@ -36,5 +36,4 @@ return [
         'murugo_url' => env('MURUGO_URL', 'MURUGO_URL'),
         'murugo_app_key' => env('MURUGO_APP_KEY'),
     ],
-
 ];
